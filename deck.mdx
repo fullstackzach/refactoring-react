@@ -1,23 +1,84 @@
-import { Head, Notes } from 'mdx-deck'
+import { Head, Notes, Image } from 'mdx-deck'
+import { FullScreenCode } from 'mdx-deck/layouts'
+import HOCtoRenderProp from './RenderProps/RenderProp'
+import CompoundComponents from './CompoundComponents'
+import FullScreenLayout from './FullScreenLayout'
 
 export { theme } from './theme'
 
 <Head>
-  <title>Presentation Title</title>
+  <title>Refactoring React</title>
 </Head>
 
-# Hello
+# Refactoring React
 
 ---
 
-## Edit this file
+# Zach Willard
 
-To create your presentation
-
-<Notes>
-Create speaker notes with the Notes component
-</Notes>
+#### Northwestern Mutual Dev on the client website 
+#### 👨‍💻 12 years into my career, back at Dev now for 2 years 👨‍💻
+#### ⚛️ I love it - React, JS and all things tech ⚛️
 
 ---
 
-<https://github.com/jxnblk/mdx-deck>
+# Today
+
+Higher order components vs. Render Props
+
+Create a compound component 
+
+What are these? Pros/Cons - When you should use each
+
+---
+
+# Higher Order Components
+
+What are they?
+
+* Share common functionality among components
+
+* Mixins used to be the thing (thats so 2015 now)
+
+* React ditched React.CreateClass in favor of native ES6 classes
+
+---
+
+You might recognize these
+
+```
+export default withRouter(MyComponent)
+export default withTheme(MyComponent)
+```
+
+Or this iconic one
+
+```
+export default connect(
+  mapStateToProps, mapDispatchToProps
+)(MyComponent)
+```
+
+--- 
+
+Live coding time
+
+<div style={{ width: '500px'}}>
+<img src="https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif" style={{ width: '100%' }} />
+</div>
+
+---
+
+<FullScreenLayout>
+  <HOCtoRenderProp message='hello world' />
+</FullScreenLayout>
+
+---
+
+<FullScreenLayout>
+  <CompoundComponents />
+</FullScreenLayout>
+
+---
+
+:sunglasses:
