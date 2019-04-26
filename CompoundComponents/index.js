@@ -1,22 +1,19 @@
 import React, { useState } from 'react'
-
-
+import * as S from './styles'
 
 const Tab = ({ children }) => {
   const isDisabled = false;
   const isActive = false;
-  const style = isDisabled ?
-    styles.disabledTab : isActive ? styles.activeTab : styles.tab
 
   return (
-    <div style={style}>
+    <S.Tab isDisabled={isDisabled} isActive={isActive}>
       {children}
-    </div>
+    </S.Tab>
   )
 }
 
 const Tabs = ({ children }) => {
-  [activeIndex, setActiveIndex] = useState(0)
+  const [activeIndex, setActiveIndex] = useState(0)
   return <div>{children}</div>
 }
 
@@ -26,9 +23,9 @@ const TabList = ({ children }) => {
 
 const Content = ({ children }) => {
   return (
-    <div style={styles.content}>
+    <S.Content>
       {children}
-    </div>
+    </S.Content>
   )
 }
 

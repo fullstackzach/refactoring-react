@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import * as S from './styles'
 
-const Tabs = ({ data, tabsOnBottom, disabled }) => {
+const Tabs = ({ data, }) => {
   const [activeIndex, setActiveIndex] = useState(0)
   
   const renderTabs = () => {
