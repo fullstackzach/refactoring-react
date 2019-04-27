@@ -9,7 +9,7 @@ const Reset = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  * {
+  && * {
     text-align: left;
     font-size: 16px;
   }
@@ -17,6 +17,8 @@ const Reset = styled.div`
 
 export default ({ children }) => (
   <Reset>
-    {children}
+    <div>
+      {children}
+    </div>
   </Reset>
 )
