@@ -28,7 +28,7 @@ export default App
 // 2 - What issues do we have?
 //  * naming conflicts
 //  * ambiguous where props may be coming from
-//  * HOCs are static
+//  * HOCs are static and set up at compile time
 
 // 3 Bring in mouses' 'friend'
 // 4 show what happens if theres a naming conflict
