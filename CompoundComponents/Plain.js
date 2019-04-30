@@ -8,8 +8,8 @@ const Tabs = ({ data }) => {
     return data.map((tab, index) => {
       const isActive = index === activeIndex
       const handleSetActive = () => setActiveIndex(index)
-      return <S.Tab 
-        key={tab.label} 
+      return <S.Tab
+        key={tab.label}
         isActive={isActive}
         onClick={handleSetActive}
       >{tab.label}</S.Tab>
@@ -30,7 +30,7 @@ const Tabs = ({ data }) => {
 }
 
 const App = () => {
-  
+
   const tabData = [
     {
       label: 'Superman',

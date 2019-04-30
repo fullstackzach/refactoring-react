@@ -56,6 +56,10 @@ export default App
   1. get the correct content showing up based on state
   2. Get the tab to show active based on state
   3. get clicks on tabs working
-  4. get disabled
+  4. get disabled state in there (and disable click)
+  5. disabled prop
+  6. user can rearrange elements now
+  7. tabs in tabs in tabs
+  8. Refactor and add context to content and TabList
 */ 
 
