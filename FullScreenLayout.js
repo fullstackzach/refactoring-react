@@ -9,6 +9,8 @@ const Reset = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
+  height: 100vh;
+  width: 100vw;
   && * {
     text-align: left;
     font-size: 16px;
@@ -17,7 +19,7 @@ const Reset = styled.div`
 
 export default ({ children }) => (
   <Reset>
-    <div>
+    <div style={{ height: '100%'}}>
       {children}
     </div>
   </Reset>

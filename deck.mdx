@@ -1,6 +1,6 @@
 import { Head, Notes, Image } from 'mdx-deck'
 import { FullScreenCode } from 'mdx-deck/layouts'
-import HOCtoRenderProp from './RenderProps/RenderProp'
+import HOCtoRenderProp from './RenderProps'
 import CompoundComponents from './CompoundComponents/Plain'
 import FullScreenLayout from './FullScreenLayout'
 
@@ -16,19 +16,53 @@ export { theme } from './theme'
 
 # Zach Willard
 
-#### Northwestern Mutual Dev on the client website 
-#### 👨‍💻 12 years into my career, back at Dev now for 2 years 👨‍💻
-#### ⚛️ I love it - React, JS and all things tech ⚛️
+#### Northwestern Mutual Dev working on the client website 
+#### ⚛️ I love it - React, JavaScript and all things tech ⚛️
+#### Dad to two kids (1yr boy and 2yr old girl) - It's a full time job in itself!
 
 ---
 
-# Today
+# Lets give rendering back to the user!
 
-Higher order components vs. Render Props
 
-Create a compound component 
+<div style={{ margin: 'auto' }}>
+  <div style={{ margin: 'auto', lineHeight: '500px', display: 'inline-block', backgroundColor: 'papayawhip', width: '500px', height: '500px'}}>
+    rendering
+  </div>
+  <div style={{ margin: 'auto', lineHeight: '500px', display: 'inline-block', backgroundColor: 'cornflowerblue', width: '500px', height: '500px'}}>
+    react state
+  </div>
+</div>
 
-What are these? Pros/Cons - When you should use each
+---
+
+### Compound components using React hooks and react context
+
+### HOCs vs render props (Bonus)
+
+---
+
+# Compound Components
+
+❤️ Highly Shareable components 
+
+🕵️ Manages their own state 'covertly'
+
+👍 gives rendering power back to the component user
+
+--- 
+
+# Live coding time
+
+<div style={{ width: '700px', margin: 'auto' }}>
+  <img src="https://media.giphy.com/media/5Zesu5VPNGJlm/giphy.gif" style={{ width: '100%' }} />
+</div>
+
+---
+
+<FullScreenLayout>
+  <CompoundComponents />
+</FullScreenLayout>
 
 ---
 
@@ -36,11 +70,11 @@ What are these? Pros/Cons - When you should use each
 
 What are they?
 
-* Share common functionality among components
+🤝 Another way to Share common functionality among components
 
-* Mixins used to be the thing (thats so 2015 now)
+👎 Mixins used to be the thing (thats so 2015 now)
 
-* React ditched React.CreateClass in favor of native ES6 classes
+🔥 React ditched React.CreateClass in favor of native ES6 classes
 
 ---
 
@@ -61,9 +95,9 @@ export default connect(
 
 --- 
 
-Live coding time
+# Live coding time
 
-<div style={{ width: '500px'}}>
+<div style={{ width: '500px', margin: 'auto' }}>
 <img src="https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif" style={{ width: '100%' }} />
 </div>
 
@@ -75,10 +109,8 @@ Live coding time
 
 ---
 
-<FullScreenLayout>
-  <CompoundComponents />
-</FullScreenLayout>
+# Thank you!
 
----
+### 🐦 @fullstackzach_ on Twitter
 
-:sunglasses:
+### Thanks to Ryan Florence (@ryanflorence) and Michael Jackson (@mjackson) for the original inspiration on these examples!

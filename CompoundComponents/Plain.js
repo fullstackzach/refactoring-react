@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import * as S from './styles'
 
-const Tabs = ({ data, }) => {
+const Tabs = ({ data }) => {
   const [activeIndex, setActiveIndex] = useState(0)
   
   const renderTabs = () => {
@@ -33,7 +33,7 @@ const App = () => {
   const tabData = [
     {
       label: 'Superman',
-      description: <p>Flys through the air and lifts heavy things</p>
+      description: <p>The Man of Steel - Flys through the air and lifts heavy things</p>
     },
     {
       label: 'Spiderman',

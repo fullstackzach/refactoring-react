@@ -13,7 +13,7 @@ const Tab = ({ children }) => {
 }
 
 const Tabs = ({ children }) => {
-  const [activeIndex, setActiveIndex] = useState(0)
+  const [activeIndex, setActiveIndex] = useState(0) // hey react hooks
   return <div>{children}</div>
 }
 
@@ -36,7 +36,6 @@ const TabContent = ({ children }) => {
 }
 
 const App = () => 
-<div>
   <Tabs>
     <TabList>
       <Tab>Superman</Tab>
@@ -49,6 +48,14 @@ const App = () =>
       <TabContent>The Dark Knight - of course</TabContent>
     </Content>
   </Tabs>
-</div>
 
 export default App
+
+
+/*
+  1. get the correct content showing up based on state
+  2. Get the tab to show active based on state
+  3. get clicks on tabs working
+  4. get disabled
+*/ 
+

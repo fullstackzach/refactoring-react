@@ -72,10 +72,10 @@ const WithMouse = (Component) => {
 const App = ({message}) =>
   <Mouse>
     {(mouse) => (
-      <div>
+      <>
         <h1>The mouse position is ({mouse.x}, {mouse.y}), the message is {message}</h1>
         <Cat mouse={mouse} />
-      </div> 
+      </>
     )}
   </Mouse>
 
