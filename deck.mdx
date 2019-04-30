@@ -1,7 +1,8 @@
 import { Head, Notes, Image } from 'mdx-deck'
 import { FullScreenCode } from 'mdx-deck/layouts'
 import HOCtoRenderProp from './RenderProps'
-import CompoundComponents from './CompoundComponents/Plain'
+import CompoundComponentsNotCompound from './CompoundComponents/Plain'
+import CompoundComponents from './CompoundComponents'
 import FullScreenLayout from './FullScreenLayout'
 
 export { theme } from './theme'
@@ -62,7 +63,17 @@ Dad to two kids (1yr boy and 2yr old girl) - It's a full time job in itself!
 ---
 
 <FullScreenLayout>
-  <CompoundComponents />
+  <div style={{ borderLeftColor: 'blue', borderLeft: '6px solid papayawhip', height: '100%' }}>
+    <CompoundComponentsNotCompound />
+  </div>
+</FullScreenLayout>
+
+---
+
+<FullScreenLayout>
+  <div style={{ borderLeftColor: 'blue', borderLeft: '6px solid cornflowerblue', height: '100%' }}>
+    <CompoundComponents />
+  </div>
 </FullScreenLayout>
 
 ---

@@ -32,3 +32,5 @@ export default App
 
 // 3 Bring in mouses' 'friend'
 // 4 show what happens if theres a naming conflict
+// 5 Refactor to Render props
+//   
