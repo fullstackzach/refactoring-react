@@ -30,6 +30,7 @@ const Tabs = ({ data }) => {
 }
 
 const App = () => {
+  
   const tabData = [
     {
       label: 'Superman',
@@ -44,6 +45,7 @@ const App = () => {
       description: <p>The Dark Knight - of course</p>
     }
   ]
+
   return (
     <>
       <Tabs data={tabData} />
