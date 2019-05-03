@@ -61,6 +61,7 @@ const tabData = [
   }
 ]
 
+// You can still wrap your Compound component and map over the data to like you did in the Plain example
 const DataTabs = ({ data }) => 
   <Tabs>
     <TabList>
@@ -78,21 +79,5 @@ const DataTabs = ({ data }) =>
 
 const App = () => 
     <DataTabs data={tabData} />
-
-  // <Tabs>
-  //   <div style={{ border: 'black solid', margin: '30px' }}>
-  //     <TabList>
-  //       <Tab>Superman</Tab>
-  //       <Tab>Spiderman</Tab>
-  //       <Tab>Batman</Tab>
-  //     </TabList>
-  //   </div>
-  //   <h1>WHAAATTTT!!!!!!??????</h1>
-  //   <Content>
-  //     <TabContent>Flys through the air and lifts heavy things</TabContent>
-  //     <TabContent>Swings through the city using his web</TabContent>
-  //     <TabContent>The Dark Knight - of course</TabContent>
-  //   </Content>
-  // </Tabs>
 
 export default App
