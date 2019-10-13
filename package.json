@@ -8,7 +8,7 @@
     "help": "mdx-deck"
   },
   "devDependencies": {
-    "mdx-deck": "2.5.1"
+    "mdx-deck": "3.0.13"
   },
   "dependencies": {
     "file-loader": "4.2.0",
